@@ -23,6 +23,8 @@ jobs:
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/sitegen27:latest
       -
+        uses: actions/checkout@v4
+      -
         name: Update repo description
         uses: peter-evans/dockerhub-description@v4
         with:
