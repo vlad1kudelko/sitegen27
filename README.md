@@ -45,7 +45,7 @@ docker-compose.yml
 ```yaml
 services:
   sitegen27:
-    image: '__??__/sitegen27'
+    image: 'vlad1kudelko/sitegen27'
     volumes:
       - '.:/app/www'
     environment:
