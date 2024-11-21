@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "js-beautify": "^1.14.4",
+    "pug": "^3.0.2",
+    "showdown": "^2.1.0",
+    "toml": "^3.0.0"
+  }
+}
