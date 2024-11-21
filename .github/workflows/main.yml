@@ -21,5 +21,11 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          description: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/sitegen27:latest
+      -
+        name: Update repo description
+        uses: peter-evans/dockerhub-description@v4
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: ${{ vars.DOCKERHUB_USERNAME }}/sitegen27
