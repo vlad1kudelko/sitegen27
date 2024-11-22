@@ -10,4 +10,4 @@ USER node
 COPY . .
 
 WORKDIR /app/www
-CMD ["node", "/app/build.js"]
+# CMD ["node", "/app/build.js"]
